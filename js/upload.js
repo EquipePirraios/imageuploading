@@ -23,7 +23,6 @@ var feedback = function(res) {
              + '<img class="img" alt="Imgur-Upload" src=\"' + get_link + '\"/>';
         addImg('.status', content);
         
-        return get_link;
     }
 };
 
