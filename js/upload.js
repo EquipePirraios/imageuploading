@@ -22,10 +22,13 @@ var feedback = function(res) {
             'Image : ' + '<br><input class="image-url" value=\"' + get_link + '\"/>' 
              + '<img class="img" alt="Imgur-Upload" src=\"' + get_link + '\"/>';
         addImg('.status', content);
+        
+        return get_link;
     }
 };
 
 new Imgur({
     clientid: '9516b72594d77fc', //You can change this ClientID
+    callback: feedback
     
 });
